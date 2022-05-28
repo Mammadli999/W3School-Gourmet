@@ -1,0 +1,227 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+.header {
+  position: fixed;
+  width: 100%;
+  background-color: #fff;
+  z-index: 1;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 16px; }
+  .header__home {
+    padding: 8px 16px; }
+    .header__home__link, .header__nav__link-list__item__link {
+      text-decoration: none;
+      color: black;
+      font-size: 15px;
+      letter-spacing: 4px; }
+  .header__nav__link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style-type: none; }
+    .header__nav__link-list__item {
+      padding: 8px 16px; }
+
+.header__nav__link-list__item:hover {
+  background-color: #ccc; }
+
+.header__home:hover {
+  background-color: #ccc; }
+
+@media only screen and (max-width: 600px) {
+  .header__nav {
+    display: none; } }
+
+.footer {
+  padding: 32px 0;
+  background-color: #f1f1f1;
+  text-align: center; }
+  .footer__span {
+    display: inline-block;
+    margin: 15px 0; }
+    .footer__span__link {
+      color: black; }
+    .footer__span__link:hover {
+      color: #4caf50; }
+
+.head-image-wrapper {
+  width: 100%;
+  position: relative; }
+  .head-image-wrapper__content {
+    max-width: 100%; }
+  .head-image-wrapper__span {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    letter-spacing: 5px;
+    font-size: 36px;
+    line-height: 1.5;
+    opacity: 0.6;
+    padding: 22px 24px; }
+
+.primary {
+  max-width: 1100px;
+  margin: 0px auto; }
+  .primary__about, .primary__menu {
+    padding: 64px 0px;
+    display: flex;
+    align-items: stretch;
+    justify-content: center; }
+    .primary__about__img {
+      width: 50%;
+      padding: 12px 24px; }
+      .primary__about__img__item {
+        max-width: 100%; }
+    .primary__about__text {
+      width: 50%;
+      padding: 12px 24px; }
+      .primary__about__text__h2, .primary__menu__text__h1, .primary__contact__h1 {
+        font-style: "Times New Roman", Georgia, Serif;
+        font-size: 36px;
+        font-weight: 400;
+        letter-spacing: 5px;
+        text-align: center;
+        line-height: 1.5;
+        color: black;
+        margin: 10px 0; }
+      .primary__about__text__h5 {
+        font-style: "Times New Roman", Georgia, Serif;
+        font-size: 18px;
+        font-weight: 400;
+        letter-spacing: 5px;
+        text-align: center;
+        line-height: 1.5;
+        color: black;
+        margin: 10px 0; }
+      .primary__about__text__firstP {
+        font-style: "Times New Roman", Georgia, Serif;
+        font-size: 18px;
+        font-weight: 400;
+        letter-spacing: 0px;
+        text-align: left;
+        line-height: 1.5;
+        color: black;
+        margin: 18px 0; }
+        .primary__about__text__firstP__span {
+          font-style: "Times New Roman", Georgia, Serif;
+          font-size: 18px;
+          font-weight: 400;
+          letter-spacing: 0px;
+          text-align: center;
+          line-height: 1.5;
+          color: black;
+          background-color: #f1f1f1;
+          display: inline-block;
+          padding: 0 8px; }
+      .primary__about__text__secondP {
+        font-style: "Times New Roman", Georgia, Serif;
+        font-size: 18px;
+        font-weight: 400;
+        letter-spacing: 0px;
+        text-align: left;
+        line-height: 1.5;
+        color: #757575;
+        margin: 18px 0; }
+  .primary__menu__text {
+    width: 50%;
+    padding: 12px 24px; }
+    .primary__menu__text__h4 {
+      font-style: "Times New Roman", Georgia, Serif;
+      font-size: 20px;
+      font-weight: 400;
+      letter-spacing: 5px;
+      text-align: left;
+      line-height: 1.5;
+      color: black;
+      margin: 10px 0; }
+    .primary__menu__text__p {
+      font-style: "Times New Roman", Georgia, Serif;
+      font-size: 15px;
+      font-weight: 400;
+      letter-spacing: 0px;
+      text-align: left;
+      line-height: 1.5;
+      color: #757575;
+      margin: 15px 0; }
+  .primary__menu__img {
+    width: 50%;
+    padding: 12px 24px; }
+    .primary__menu__img__item {
+      width: 100%;
+      opacity: 0.75; }
+  .primary__contact {
+    padding: 64px 16px; }
+    .primary__contact__h1 {
+      text-align: start; }
+    .primary__contact__p {
+      font-style: "Times New Roman", Georgia, Serif;
+      font-size: 15px;
+      font-weight: 400;
+      letter-spacing: 0;
+      text-align: left;
+      line-height: 1.5;
+      color: black;
+      margin: 15px 0; }
+    .primary__contact__address {
+      font-style: "Times New Roman", Georgia, Serif;
+      font-size: 18px;
+      font-weight: bold;
+      letter-spacing: 0;
+      text-align: left;
+      line-height: 1.5;
+      color: #607d8b;
+      font-style: normal; }
+    .primary__contact__form {
+      display: flex;
+      align-items: flex-start;
+      justify-content: normal;
+      flex-direction: column; }
+      .primary__contact__form__label {
+        width: 100%;
+        margin: 15px 0px; }
+        .primary__contact__form__label__input {
+          padding: 16px 8px;
+          width: 100%;
+          border: none;
+          border-bottom: 1px solid #ccc; }
+      .primary__contact__form__button {
+        margin: 15px 0;
+        padding: 8px 16px;
+        border: none;
+        background-color: #f1f1f1;
+        font-style: "Times New Roman", Georgia, Serif;
+        font-size: 15px;
+        font-weight: 400;
+        letter-spacing: 0;
+        text-align: left;
+        line-height: 1.5;
+        color: black;
+        font-family: "Times New Roman", Georgia, Serif; }
+      .primary__contact__form__button:hover {
+        cursor: pointer;
+        background-color: #ccc; }
+
+hr {
+  border: 0;
+  border-top: 1px solid #eee;
+  margin: 20px 0; }
+
+@media only screen and (max-width: 600px) {
+  .primary__about__img {
+    display: none; }
+  .primary__about__text {
+    width: 100%; } }
+
+@media only screen and (max-width: 994px) {
+  .primary__menu {
+    display: block; }
+  .primary__menu__text {
+    width: 100%; }
+  .primary__menu__img {
+    width: 100%; } }
